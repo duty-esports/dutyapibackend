@@ -24,6 +24,9 @@ async cadastrar(data: UserCadastrarDto): Promise<UserResultDto>{
   usuario.email = data.email
   usuario.name = data.name
   usuario.password = data.password
+  usuario.dataDeNascimento = data.dataDeNascimento
+  usuario.nickName = data.nickName
+  usuario.plataformaDeJogo= data.plataformaDeJogo
 
   return this.userRepository.save(usuario)
   .then((result) => {
