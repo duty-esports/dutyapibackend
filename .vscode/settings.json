@@ -25,6 +25,19 @@
             "database": "heroku_a55c32c097282c3",
             "username": "b4e865e9c872c8",
             "password": "ec20e7d5"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost\tkutnpvrhom7lki7u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "cleardbJSw",
+            "username": "jplwf8cp6g5m5yba",
+            "password": "mzbv0x1z9aat5b95",
+            "database": "mmehlrfywjrwx3jb"
         }
     ]
 }
