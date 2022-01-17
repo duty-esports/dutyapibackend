@@ -1,0 +1,1 @@
+create * FROM dutybd.user;
