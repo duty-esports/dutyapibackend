@@ -1,4 +1,3 @@
-web.1: npm server.js
 web:node server.js
 
 
