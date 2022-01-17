@@ -1,7 +1,7 @@
 {
   "name": "api-dutyesport",
   "version": "0.0.1",
-  "description": "",
+  "description": "<p align=\"center\">   <a href=\"http://nestjs.com/\" target=\"blank\"><img src=\"https://nestjs.com/img/logo_text.svg\" width=\"320\" alt=\"Nest Logo\" /></a> </p>",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
@@ -9,9 +9,8 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-     "postinstall": "npm run build",
+    "postinstall": "npm run build",
     "start": "npm start",
-
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -73,5 +72,17 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duty-esports/dutyapibackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duty-esports/dutyapibackend/issues"
+  },
+  "homepage": "https://github.com/duty-esports/dutyapibackend#readme"
 }
