@@ -1,4 +1,6 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Tournament } from 'src/tournament/tournament.entity';
+import { User } from 'src/user/User.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 /*Criar tabelas*/
 @Entity()
 export class Team {
@@ -10,5 +12,14 @@ export class Team {
 
   @Column({ length: 100 })
   descricao: string;
+
+
+  @OneToMany(() => User, jogador => jogador.nickName)
+  jogador: User[];
+
+  @OneToMany(() => Tournament, torneios => torneios.nickJogador)
+  torneios: Tournament[];
+  
+
 
 }

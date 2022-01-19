@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { User } from 'src/user/User.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 /*Criar tabelas*/
 @Entity()
 export class Matchfinder {
@@ -11,5 +12,8 @@ export class Matchfinder {
 
   @Column({ length: 100 })
   plataforma: string;
+
+  @OneToMany(()=> User, usuario => usuario.nickName)
+  usuario: User;
 
 }

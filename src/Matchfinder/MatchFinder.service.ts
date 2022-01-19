@@ -14,11 +14,11 @@ export class MatchFinderService {
 
 
   /*lista todos os usuarios*/
-  async listarTeam(): Promise<Matchfinder[]> {
+  async listarMatchFinder(): Promise<Matchfinder[]> {
     return this.teamRepository.find();
   }
 /*cadastrar user*/
-async cadastrarTeam(data: MatchFinderCadastrarDto): Promise<MatchFinderResultDto>{
+async cadastrarMatchFinder(data: MatchFinderCadastrarDto): Promise<MatchFinderResultDto>{
   let desafio = new Matchfinder()
   desafio.nickJogador =data.nickJogador
   desafio.plataforma =data.plataforma

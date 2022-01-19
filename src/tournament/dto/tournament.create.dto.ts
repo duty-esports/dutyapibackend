@@ -3,5 +3,6 @@ export interface TournamentCadastrarDto{
     dataFim: Date;
     descricao: string;
     plataformaDeJogo: string;
+    nickJogador: string;
  
 }
