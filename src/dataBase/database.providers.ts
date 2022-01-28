@@ -9,7 +9,7 @@ export const databaseProviders = [
       port: 3306,
       username: 'jplwf8cp6g5m5yba',
       password: 'mzbv0x1z9aat5b95',
-      database: 'My Databite',
+      database: 'mmehlrfywjrwx3jb',
     /*  type: 'mysql',
       host: 'us-cdbr-east-05.cleardb.net',
       port: 3306,
