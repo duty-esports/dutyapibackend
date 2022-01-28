@@ -1,5 +1,5 @@
-import { Team } from 'src/Team/Team.entity';
-import { Tournament } from 'src/tournament/tournament.entity';
+import { Team } from '../Team/Team.entity';
+import { Tournament } from '../tournament/tournament.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 /*Criar tabelas*/
 @Entity()

@@ -1,4 +1,4 @@
-import { User } from 'src/user/User.entity';
+import { User } from '../user/User.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 /*Criar tabelas*/
 @Entity()

@@ -1,7 +1,6 @@
-
-import { Matchfinder } from 'src/Matchfinder/matchfinder.entity';
-import { Team } from 'src/Team/Team.entity';
-import { Tournament } from 'src/tournament/tournament.entity';
+import { Matchfinder } from '../Matchfinder/matchfinder.entity';
+import { Team } from '../Team/Team.entity';
+import { Tournament } from '../tournament/tournament.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, OneToOne, ManyToOne, ManyToMany } from 'typeorm';
 /*Criar tabelas*/
 @Entity()
