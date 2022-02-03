@@ -1,2 +1,2 @@
-# duty-esports-frontend
+# duty-esports-backend
 Duty ESports

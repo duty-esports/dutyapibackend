@@ -6,7 +6,7 @@ import { Entity, Column, PrimaryGeneratedColumn, OneToMany, OneToOne, ManyToOne,
 @Entity()
 export class User {
   @PrimaryGeneratedColumn()
-  id: number;
+  idUser: number;
 
   @Column({ length: 100 })
   name: string;
@@ -26,13 +26,13 @@ export class User {
   @Column({length: 500})
   plataformaDeJogo: string;
   
-  @OneToMany(()=> Matchfinder,matchfinder => matchfinder.nickJogador)
+  @OneToMany(()=> Matchfinder,matchfinder => matchfinder.idMatchfinder)
   matchfinder: Matchfinder[];
 
-  @OneToMany(() => Tournament,torneio => torneio.nickJogador)
+  @OneToMany(() => Tournament,torneio => torneio.idTorneio)
   torneio:Tournament[];
 
-  @ManyToOne(() => Team, time => time.nameTeam)
+  @ManyToOne(() => Team, time => time.idTeam)
   time: Team;
 
 }

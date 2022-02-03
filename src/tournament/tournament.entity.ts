@@ -7,7 +7,7 @@ import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 export class Tournament {
 
   @PrimaryGeneratedColumn()
-  id: number;
+  idTorneio: number;
 
   @Column()
   dataInicio: Date;

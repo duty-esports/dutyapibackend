@@ -4,7 +4,7 @@ import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 @Entity()
 export class Matchfinder {
   @PrimaryGeneratedColumn()
-  id: number;
+  idMatchfinder: number;
 
   @Column({ length: 100 })
   nickJogador: string;
